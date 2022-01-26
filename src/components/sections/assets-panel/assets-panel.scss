@@ -1,0 +1,130 @@
+.assets-panel {
+    padding: 15px 19px 15px 18px;
+    background-color: #f1f3f2;
+    border-right: 1px solid #bfc2c4;
+    box-shadow: -5px 0px 8px 0px rgba(205, 207, 206, 0.7) inset;
+    position: relative;
+
+    .slider-icon {
+        position: absolute;
+        right: -15px;
+        top: 36px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #f1f3f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+
+
+    }
+
+    .asset {
+        border: 1px solid #bfc2c4;
+        background-color: #fff;
+        width: 190px;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &__header {
+            padding: 6px 10px 7px;
+            border-bottom: 1px solid #bfc2c4;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: bold;
+            color: #2f3b4c;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                position: relative;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 10px;
+                height: 10px;
+                margin-right: 7px;
+            }
+        }
+
+        &__body {
+            padding: 5px;
+            height: 158px;
+        }
+
+        &__row {
+            width: 100%;
+        }
+
+        &__col {
+            position: relative;
+        }
+
+        .bottle {
+            &.bottle-B {
+                .icon {
+
+
+                    use {
+                        //stroke: black;
+                        color: #f4f4f7;
+                    }
+                }
+
+            }
+
+            .bottle-txt {
+                position: absolute;
+                bottom: 8px;
+                font-size: 11px;
+            }
+
+            .bottle-under {
+                position: absolute;
+                bottom: -13px;
+                font-size: 9px;
+            }
+        }
+
+        .icon.icon-sampler-icon {
+            width: 60px;
+            height: 110px;
+        }
+
+    }
+
+    .asset-1 {
+        .asset__header:before {
+            background-color: #1a9022;
+        }
+    }
+
+    .asset-2 {
+        .asset__header:before {
+            background-color: #f5ad3c;
+        }
+
+        .asset__row:first-child {
+            .asset__col:first-child {
+                .icon {
+                    width: 30px;
+                    position: relative;
+                }
+
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 1120px) {
+    .assets-panel .slider-icon {
+        display: none;
+    }
+}

@@ -1,0 +1,90 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    @include font_size-line(12px, 14px);
+    //letter-spacing: 20px;
+    font-weight: normal;
+    position: relative;
+    background-color: #c5c5c5;
+    color: #2f3b4c;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        opacity: 0.5;
+        background-color: #d4d4d4;
+        color: inherit;
+        transition: 0.2s easy 0.5s;
+        top: 3px;
+    }
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+
+.logo-title {
+    font-family: "Roboto", sans-serif;
+    @include font_size-line(27px, 29px);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.h {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    //letter-spacing: 20px;
+    color: #2f3b4c;
+    margin: 0;
+}
+
+h2 {
+    @include font_size-line(16px, 18px);
+}
+
+h3 {
+    @include font_size-line(14px, 16px);
+}
+
+h4 {
+    @include font_size-line(13px, 15px);
+}
+
+.bg {
+    overflow: scroll;
+    min-width: 300px;
+    position: relative;
+
+    .outer-bg {
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.g-main {
+    position: relative;
+    background-color: #f1f3f2;
+    width: 100%;
+    display: flex;
+
+}
+
+.main__wrapper {
+    width: 100%;
+}
+
+
+//@media (max-width: 992px) {
+//    h2 {
+//        @include font_size-line(28px, 36px);
+//    }
+//}

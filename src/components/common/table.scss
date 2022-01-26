@@ -1,0 +1,26 @@
+.table {
+    line-height: 15px;
+
+    &>:not(:first-child) {
+        border-top: 0;
+    }
+
+    thead {
+        background-color: #5ea0c0;
+        color: #fff;
+    }
+
+    tbody {
+        tr:nth-child(even) {
+            background-color: #f2fafd;
+        }
+        tr td:not(:last-child) {
+            border-right: 1px solid #dfe0e1;
+        }
+
+        tr td {
+            text-align: right;
+        }
+    }
+}
+

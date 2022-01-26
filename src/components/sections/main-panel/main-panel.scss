@@ -1,0 +1,166 @@
+.main-panel {
+    padding: 15px;
+    width: 100%;
+
+
+    &__row {
+        //width: 100%;
+        align-items: stretch;
+
+        &:nth-child(2) {
+            //height: 100%;
+
+
+            .main-panel__col {
+                align-self: stretch;
+                //height: 100%;
+
+                .window-3 {
+                    //height: 100%;
+
+                    .window-body {
+                        //height: 100%;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    &__col {
+        width: 100%;
+    }
+}
+
+.window {
+    background-color: #fff;
+    border: 1px solid #bfc2c4;
+
+
+    &-header {
+        padding: 13px 16px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #bfc2c4;
+    }
+
+}
+
+.window-block {
+    padding: 12px 15px;
+}
+
+@import "window-1";
+
+.window-2 {
+    margin-right: 15px;
+
+    .plots {
+
+        &__row {
+            padding: 10px 15px;
+            border-bottom: 1px solid #ebf2f4;
+        }
+
+        &__item {
+            margin-right: 30px;
+
+            .button-plot {
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    position: relative;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 18px;
+                    height: 10px;
+                    margin-right: 6px;
+                }
+            }
+
+            &:first-child .button-plot:before {
+                background: url("../images/png/plot-blue.png") center no-repeat;
+            }
+
+            &:nth-child(2) .button-plot:before {
+                background: url("../images/png/plot-purple.png") center no-repeat;
+            }
+
+            &:nth-child(3) .button-plot:before {
+                background: url("../images/png/plot-yellow.png") center no-repeat;
+            }
+        }
+
+    }
+
+    .graph {
+        &__row {
+            padding: 10px 18px;
+        }
+    }
+
+    .graph-buttons {
+        flex-direction: column;
+
+        &__col {
+            padding: 8px;
+            border-left: 1px solid #ebf2f4;
+        }
+
+        &__button {
+            background-color: #fff;
+            border: 1px solid #bfc2c4;
+            width: 43px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0;
+            padding: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+        }
+    }
+}
+
+.window-3 {
+    height: 100%;
+
+}
+
+
+@media (max-width: 1710px) {
+    .main-panel {
+        &__row {
+            flex-direction: column;
+        }
+
+        &__col .window-2 {
+            margin-right: 0;
+        }
+
+        &__col:nth-child(2) {
+            margin-top: 15px;
+
+            .window-body {
+                min-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+
+
+
+

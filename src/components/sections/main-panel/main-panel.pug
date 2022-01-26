@@ -1,0 +1,55 @@
+block main-panel
+    section.main-panel
+
+        .main-panel__row
+            .main-panel__col
+                .window.window-1
+                    include window-1-header
+
+
+                    .window-body.flex
+                        include window-1-aside
+
+                        .window-main
+                            .window-main__row.flex
+                                .window-main__col
+                                    include window-1-block-1
+
+                                .window-main__col
+                                    include window-1-block-2
+
+
+                    include window-1-footer
+
+
+        .main-panel__row.flex
+            .main-panel__col
+                .window.window-2
+                    h2.h.window-header Live chart
+                    .window-body
+                        .window__row.flex
+                            .window__col
+                                .plots
+                                    .plots__row.flex
+                                        .plots__item
+                                            button.button.button-plot Plot
+                                        .plots__item
+                                            button.button.button-plot Plot
+                                        .plots__item
+                                            button.button.button-plot Plot
+                                .graph
+                                    .graph__row
+                                        img(src="static/images/png/live-chart.png" alt="График")
+                            .window__col.graph-buttons__col
+                                .graph-buttons.flex
+                                    button.button.graph-buttons__button
+                                        img(src="static/images/png/legend.png" alt="legend")
+                                    button.button.graph-buttons__button
+                                        img(src="static/images/png/settings.png" alt="settings")
+                                    button.button.graph-buttons__button
+                                        img(src="static/images/png/balance.png" alt="balance")
+
+            .main-panel__col
+                .window.window-3
+                    h2.h.window-header Spectra
+                    .window-body

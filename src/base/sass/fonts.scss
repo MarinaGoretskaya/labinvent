@@ -1,0 +1,9 @@
+@import '../../mixins/sass/font-face';
+
+
+@include fontFace('Helvetica Neue', '../fonts/Helvetica Neue/HelveticaNeueCyr-Bold', 'bold', 'normal');
+@include fontFace('Helvetica Neue', '../fonts/Helvetica Neue/HelveticaNeueCyr', 'regular', 'normal');
+
+@include fontFace('Roboto', '../fonts/Roboto/Roboto-Regular', 'regular', 'normal');
+@include fontFace('Roboto', '../fonts/Roboto/Roboto-Bold', 'bold', 'normal');
+

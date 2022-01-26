@@ -1,0 +1,55 @@
+.main-block-1
+    .window-block.block-top
+        .window-block__inner.flex-between-top
+            .img-block.flex
+                img(src="static/images/png/inlet.png" alt="inlet")
+            .img-explication.
+                (Initial): 0 min<br>
+                ArMe @ 35 Oc Oven<br>
+                Out: Ambient Pressure<br>
+                25 m *
+
+    .window-block.block-control-mode
+        h4.h.window__title
+
+            .line
+            .title-txt Control Mode
+        .window-block__inner
+            .checkbox
+                input#check-switch(type="checkbox" name="switch" value="switch" checked)
+                label(for="switch") on
+
+            .inputs
+                .inputs__row.flex
+                    .inputs__col
+                        .inputs__item.input-flow
+                            label(for="flow") Flow
+                            input#inp-flow(type="text" name="flow" value="16.849")
+                            span.unit mL/min
+                        .inputs__item.input-pressure
+                            label(for="pressure") Pressure
+                            input#inp-pressure(type="text" name="pressure" value="21.756")
+                            span.unit psi
+                    .inputs__col
+                        .inputs__item.input-average
+                            label(for="average") Average Velocity
+                            input#inp-average(type="text" name="average" value="198.05")
+                            span.unit cm/sec
+                        .inputs__item.input-holdup
+                            label(for="holdup") Holdup Time
+                            input#inp-holdup(type="text" name="holdup" value="0.21038")
+                            span.unit min
+
+
+    .window-block.block-post-run
+        h4.h.window__title
+            .title-txt Post Run
+            .line
+        .window-block__inner
+            .inputs
+                .inputs__row
+                    .inputs__col
+                        .inputs__item.input-post
+                            label(for="post") Post Run
+                            input#inp-post(type="text" name="post" value="16.849")
+                            span.unit mL/min

@@ -1,0 +1,32 @@
+include ../../mixins/pug/svg-icon
+
+block variables
+    - var title = "Lims"
+
+doctype html
+html(lang="ru-RU")
+    include head
+
+    body
+        .bg
+            .outer-bg
+
+            include ../../components/header/header
+
+
+            .main__container
+                .container-b
+                    .main__row.flex
+
+                        include ../../components/aside/aside
+
+                        main.g-main
+                                block assets-panel
+                                block main-panel
+
+
+        script(src="static/js/vendors/jquery-3.6.0.min.js")
+        script(src="static/js/vendors/libs.js")
+        script(src="static/js/main.js")
+
+        block script

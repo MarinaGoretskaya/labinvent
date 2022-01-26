@@ -1,0 +1,12 @@
+.b-sec {
+    //padding-top: 96px;
+    //padding-bottom: 96px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .b-sec {
+        //padding-top: 48px;
+        //padding-bottom: 48px;
+    }
+}

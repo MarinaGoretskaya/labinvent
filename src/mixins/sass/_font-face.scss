@@ -1,0 +1,12 @@
+@mixin fontFace($font-name, $path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: quote($font-name);
+        src:
+                local($font-name),
+                url(#{$path}.woff) format('woff'),
+                url(#{$path}.woff2) format('woff2'),
+                url(#{$path}.ttf) format('truetype');
+        font-weight: $weight;
+        font-style: $style
+    }
+}

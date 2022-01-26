@@ -1,0 +1,59 @@
+.main-block-2
+    .window-block.block-pressure
+        h4.h.window__title
+            .title-txt Pressure/Flow Settings
+            .line
+
+        .window-block__inner
+            .radiobuttons
+                .input-radio
+                    input#constant-pressure(type="radio" name="pressure" value="const-pressure")
+                    label(for="constant-pressure") Constant Pressure
+                .input-radio
+                    input#ramped-pressure(type="radio" name="pressure" value="ramp-pressure" checked)
+                    label(for="ramped-pressure" ) Ramped Pressure
+                .input-radio
+                    input#constant-flow(type="radio" name="pressure" value="constant-flow")
+                    label(for="constant-flow") Constant Flow
+                .input-radio
+                    input#ramped-flow(type="radio" name="pressure" value="ramped-flow")
+                    label(for="ramped-flow") Ramped Flow
+
+
+            .window-table
+                table.table
+                    thead
+                        tr
+                            th
+                            th Ramp ##
+                            th Rate, mL/min per min
+                            th Value, mL/min
+                            th Hold Time, min
+                            th Run Time, min
+                    tbody
+                        tr
+                            td
+                            td (Initial)
+                            td
+                            td 16.849
+                            td 0
+                            td 0
+                        tr
+                            td
+                                input#radio-r1(type="radio" name="table-radio" value="table-radio")
+                            td Ramp 1
+                            td 10
+                            td 16.849
+                            td 0
+                            td 0
+                        tr
+                            td
+                                input#radio-r2(type="radio" name="table-radio" value="table-radio")
+                            td Ramp 2
+                            td 10
+                            td 16.849
+                            td 0
+                            td 0
+
+    button.button.button-sw-grad
+        img(src="static/images/png/gradient.png" alt="Переключатель")

@@ -1,0 +1,76 @@
+.window-header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    text-transform: none;
+
+
+    &__list {
+        display: flex;
+        height: 100%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        background-color: #f1f3f2;
+        border-right: 1px solid #bfc2c4;
+        min-width: 170px;
+        height: 100%;
+        vertical-align: middle;
+
+        &.active {
+            background-color: #fff;
+        }
+
+        &:nth-child(2) a span {
+            margin-right: 5px;
+        }
+    }
+
+    &__link {
+        padding: 15px 16px;
+        width: 100%;
+
+
+        span {
+            margin-right: 28px;
+
+            &.upper {
+                text-transform: uppercase;
+            }
+
+            &.bold {
+                font-weight: bold;
+            }
+
+            &.active {
+                color: #2574a9;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: -14px;
+                    background: url("../images/png/triangle.png") no-repeat center;
+                    width: 9px;
+                    height: 13px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1320px) {
+    .window-header {
+        height: inherit;
+
+        &__list {
+            flex-direction: column;
+        }
+    }
+}

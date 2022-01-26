@@ -1,0 +1,49 @@
+.container-b {
+    width: 100%;
+    //padding-right: 10px;
+    //padding-left: 10px;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+//@media (min-width: 360px) {
+//    .container {
+//        max-width: 348px;
+//    }
+//}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 748px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1140px) {
+    .container {
+        max-width: 1080px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1220px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1700px;
+    }
+}

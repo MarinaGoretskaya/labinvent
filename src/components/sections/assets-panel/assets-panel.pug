@@ -1,0 +1,35 @@
+block assets-panel
+    section.assets-panel
+        .slider-icon
+            img(src="static/images/png/arrow-left.png" alt="arrow")
+            //+icon("select-arrow")
+        .asset.asset-1
+            .asset__header Sampler
+            .asset__body.flex.flex-around-center
+                .asset__row.flex-around
+                    .asset__col
+                        +icon("sampler-icon")
+                    .asset__col.flex-col-around-center
+                        .thermostat
+                            img(src="static/images/png/thermostat.png" alt="thermostat")
+                        .vial
+                            img(src="static/images/png/vial.png" alt="vial")
+        .asset.asset-2
+            .asset__header Quat. Pump
+            .asset__body.flex-col-around-center
+                .asset__row.flex-around-center
+                    .asset__col.flex
+                        .bottle.bottle-A.flex-center
+                            +icon("bottle-A")
+                            span.bottle-txt A
+                            span.bottle-under 0.0
+
+                        .bottle.bottle-B.flex-center
+                            +icon("bottle-B")
+                            span.bottle-txt B
+                            span.bottle-under 100.0
+
+                    .asset__col
+                        +icon("valve-icon")
+                .asset__row.center 1.000 mL/min
+

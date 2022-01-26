@@ -1,0 +1,25 @@
+ul.list {
+    padding-left: 32px;
+
+    li {
+        list-style-type: none;
+        position: relative;
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        line-height: 26px;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -32px;
+            right: 0;
+            top: 12.5px;
+            bottom: 0;
+            background: url("../images/svg/check.svg") no-repeat center;
+            @include size(21px, 15px);
+            //border-radius: 15px;
+            //background-color: #FEE040;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.window-footer {
+    padding: 11px 27px;
+    background-color: #fff;
+    border-top: 1px solid #bfc2c4;
+
+    .buttons-left {
+
+        .button-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 32px;
+            position: relative;
+            bottom: 2px;
+
+            span.descr {
+                font-size: 11px;
+                margin-top: 4px;
+                display: block;
+            }
+        }
+
+        button {
+            width: 25px;
+            height: 25px;
+            justify-content: center;
+            align-items: center;
+            color: #afb0c3;
+            display: block;
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+
+    .buttons-right {
+        button {
+            margin-left: 10px;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .window-footer {
+        .buttons-left {
+            .button-item {
+                width: auto;
+                margin-right: 10px;
+            }
+        }
+
+        .buttons-right {
+
+            button {
+                width: auto;
+                //margin-left: 10px;
+            }
+        }
+    }
+}
