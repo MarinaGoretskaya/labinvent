@@ -16,7 +16,7 @@ header.header
                                 .mob-menu__header
                                     a.mob-menu__title.logo-title(href="index.html") Lims
                                     button.button.button-close.hamburger-closer
-                                        +icon("close")
+                                        img(src="static/images/png/close.png" alt="close")
                                 .mob-menu__body
                                     ul#mob-menu.menu__list.mob-menu__list
                                         li.menu__item.mob-menu__item
@@ -41,10 +41,17 @@ header.header
                         button.button.user
                             img(src="static/images/png/profile.png" alt="profile")
                             span Alexander
-                        button.button.language
 
-                            span ENG
-                            img(src="static/images/png/arrow-left.png" alt="arrow")
+                        button.button.language
+                            .select.lang-select
+                                input.select__input.lang-select__input(type="hidden" name="")
+                                .select__head.lang-select__head Eng
+                                ul.select__list.lang-select__list(style="display: none;")
+                                    li.select__item.lang-select__item Eng
+                                    li.select__item.lang-select__item Ru
+                                    li.select__item.lang-select__item Fr
+
+
                         button.button.lock
                             img(src="static/images/png/unlock.png" alt="unlock")
 

@@ -2,57 +2,133 @@
       viewBox="0 0 73 95"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="by_pass" fill="none">
-    <line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 5)" stroke="#00ABEE"/>
-    <line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 89)" stroke="#00ABEE"/>
-    <line y1="-0.5" x2="85" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 70 4)" stroke="#00ABEE"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="matrix(0 1 -1 0 29 1)" stroke="#00ABEE"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="matrix(0 1 -1 0 29 88)" stroke="#00ABEE"/>
-    <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M 29 0.5L 5 0.5C 3.067 0.5 1.5 2.067 1.5 4L 1.5 6C 1.5 7.933 3.067 9.5 5 9.5L 7 9.5C 7.82843 9.5 8.5 10.1716 8.5 11L 8.5 16C 8.5 16.8284 7.82843 17.5 7 17.5L 4 17.5C 2.067 17.5 0.5 19.067 0.5 21L 0.5 72C 0.5 73.933 2.067 75.5 4 75.5L 30 75.5C 31.933 75.5 33.5 73.933 33.5 72L 33.5 21C 33.5 19.067 31.933 17.5 30 17.5L 27 17.5C 26.1716 17.5 25.5 16.8284 25.5 16L 25.5 11C 25.5 10.1716 26.1716 9.5 27 9.5L 29 9.5C 30.933 9.5 32.5 7.933 32.5 6L 32.5 4C 32.5 2.067 30.933 0.5 29 0.5Z"
-          stroke-miterlimit="8" transform="translate(13 9)" stroke="#00ABEE"/>
-    <line y1="-0.5" x2="9" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 19)" stroke="#24384B"/>
-    <rect x="0.5" y="0.5" width="6" height="2" rx="0.5" transform="translate(26 16)" stroke="#24384B"/>
-    <rect x="0.5" y="0.5" width="12" height="2" rx="0.5" transform="translate(23 28)" stroke="#24384B"/>
-    <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M 8.5 0.5L 0.5 0.5L 0.5 25.5C 0.5 27.7091 2.29086 29.5 4.5 29.5C 6.70914 29.5 8.5 27.7091 8.5 25.5L 8.5 0.5Z"
-          stroke-miterlimit="8" transform="translate(25 30)" stroke="#24384B"/>
-    <rect width="3" height="3" transform="translate(28 59)" fill="#24384B"/>
-    <line y1="-0.5" x2="17" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 62)" stroke="#24384B"/>
-    <line y1="-0.5" x2="22" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 34)" stroke="#24384B"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 54)" stroke="#24384B"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 48)" stroke="#24384B"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 42)" stroke="#24384B"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 36)" stroke="#24384B"/>
-    <line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 39)" stroke="#24384B"/>
-    <line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 45)" stroke="#24384B"/>
-    <line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 51)" stroke="#24384B"/>
-</g>
-<g id="main_pass" fill="none">
-    <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M 29 0.5L 5 0.5C 3.067 0.5 1.5 2.067 1.5 4L 1.5 6C 1.5 7.933 3.067 9.5 5 9.5L 7 9.5C 7.82843 9.5 8.5 10.1716 8.5 11L 8.5 16C 8.5 16.8284 7.82843 17.5 7 17.5L 4 17.5C 2.067 17.5 0.5 19.067 0.5 21L 0.5 72C 0.5 73.933 2.067 75.5 4 75.5L 30 75.5C 31.933 75.5 33.5 73.933 33.5 72L 33.5 21C 33.5 19.067 31.933 17.5 30 17.5L 27 17.5C 26.1716 17.5 25.5 16.8284 25.5 16L 25.5 11C 25.5 10.1716 26.1716 9.5 27 9.5L 29 9.5C 30.933 9.5 32.5 7.933 32.5 6L 32.5 4C 32.5 2.067 30.933 0.5 29 0.5Z"
-          stroke-miterlimit="8" transform="translate(13 9)" stroke="#00ABEE"/>
-    <line y1="-0.5" x2="9" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 19)" stroke="#24384B"/>
-    <rect x="0.5" y="0.5" width="6" height="2" rx="0.5" transform="translate(26 16)" stroke="#24384B"/>
-    <rect x="0.5" y="0.5" width="12" height="2" rx="0.5" transform="translate(23 28)" stroke="#24384B"/>
-    <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M 8.5 0.5L 0.5 0.5L 0.5 25.5C 0.5 27.7091 2.29086 29.5 4.5 29.5C 6.70914 29.5 8.5 27.7091 8.5 25.5L 8.5 0.5Z"
-          stroke-miterlimit="8" transform="translate(25 30)" stroke="#24384B"/>
-    <rect width="3" height="3" transform="translate(28 59)" fill="#24384B"/>
-    <line y1="-0.5" x2="17" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 62)" stroke="#24384B"/>
-    <line y1="-0.5" x2="22" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 34)" stroke="#24384B"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 54)" stroke="#24384B"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 48)" stroke="#24384B"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 42)" stroke="#24384B"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 36)" stroke="#24384B"/>
-    <line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 39)" stroke="#24384B"/>
-    <line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 45)" stroke="#24384B"/>
-    <line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 51)" stroke="#24384B"/>
-    <line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 5)" stroke="#00ABEE"/>
-    <line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 89)" stroke="#00ABEE"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="matrix(0 1 -1 0 29 5)" stroke="#00ABEE"/>
-    <line y1="-0.5" x2="4" y2="-0.5" transform="matrix(0 1 -1 0 29 85)" stroke="#00ABEE"/>
-</g>
+<!--<g id="by_pass" fill="none">-->
+    <!--<line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 5)" stroke="#00ABEE"/>-->
+    <!--<line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 89)" stroke="#00ABEE"/>-->
+    <!--<line y1="-0.5" x2="85" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 70 4)" stroke="#00ABEE"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="matrix(0 1 -1 0 29 1)" stroke="#00ABEE"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="matrix(0 1 -1 0 29 88)" stroke="#00ABEE"/>-->
+    <!--<path fill-rule="evenodd" clip-rule="evenodd"-->
+          <!--d="M 29 0.5L 5 0.5C 3.067 0.5 1.5 2.067 1.5 4L 1.5 6C 1.5 7.933 3.067 9.5 5 9.5L 7 9.5C 7.82843 9.5 8.5 10.1716 8.5 11L 8.5 16C 8.5 16.8284 7.82843 17.5 7 17.5L 4 17.5C 2.067 17.5 0.5 19.067 0.5 21L 0.5 72C 0.5 73.933 2.067 75.5 4 75.5L 30 75.5C 31.933 75.5 33.5 73.933 33.5 72L 33.5 21C 33.5 19.067 31.933 17.5 30 17.5L 27 17.5C 26.1716 17.5 25.5 16.8284 25.5 16L 25.5 11C 25.5 10.1716 26.1716 9.5 27 9.5L 29 9.5C 30.933 9.5 32.5 7.933 32.5 6L 32.5 4C 32.5 2.067 30.933 0.5 29 0.5Z"-->
+          <!--stroke-miterlimit="8" transform="translate(13 9)" stroke="#00ABEE"/>-->
+    <!--<line y1="-0.5" x2="9" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 19)" stroke="#24384B"/>-->
+    <!--<rect x="0.5" y="0.5" width="6" height="2" rx="0.5" transform="translate(26 16)" stroke="#24384B"/>-->
+    <!--<rect x="0.5" y="0.5" width="12" height="2" rx="0.5" transform="translate(23 28)" stroke="#24384B"/>-->
+    <!--<path fill-rule="evenodd" clip-rule="evenodd"-->
+          <!--d="M 8.5 0.5L 0.5 0.5L 0.5 25.5C 0.5 27.7091 2.29086 29.5 4.5 29.5C 6.70914 29.5 8.5 27.7091 8.5 25.5L 8.5 0.5Z"-->
+          <!--stroke-miterlimit="8" transform="translate(25 30)" stroke="#24384B"/>-->
+    <!--<rect width="3" height="3" transform="translate(28 59)" fill="#24384B"/>-->
+    <!--<line y1="-0.5" x2="17" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 62)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="22" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 34)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 54)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 48)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 42)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 36)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 39)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 45)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 51)" stroke="#24384B"/>-->
+<!--</g>-->
+     <style type="text/css">
+         <![CDATA[
+             <!--#injection line[stroke="#00ABEE"] {-->
+                <!--stroke: green;-->
+                <!--fill: green;-->
+             <!--}-->
+
+            <!--#main_pass path[stroke="#24384B"],-->
+            <!--#main_pass line[stroke="#24384B"],-->
+            <!--#main_pass rect[stroke="#24384B"] {-->
+                <!--stroke: red;-->
+            <!--};-->
+            <!--#main_pass path[fill="#24384B"],-->
+            <!--#main_pass line[fill="#24384B"],-->
+            <!--#main_pass rect[fill="#24384B"] {-->
+                <!--fill: red;-->
+            <!--}-->
+            <!--#injection path[stroke="#24384B"],-->
+            <!--#injection line[stroke="#24384B"],-->
+            <!--#injection rect[stroke="#24384B"] {-->
+                <!--stroke: red;-->
+            <!--}-->
+            <!--#injection path[fill="#24384B"],-->
+            <!--#injection line[fill="#24384B"],-->
+            <!--#injection rect[fill="#24384B"] {-->
+                <!--fill: red;-->
+            <!--}-->
+
+
+            <!--#main_pass path[stroke="#B0B1C5"],-->
+            <!--#main_pass line[stroke="#B0B1C5"],-->
+            <!--#main_pass rect[stroke="#B0B1C5"] {-->
+                <!--stroke: yellow;-->
+            <!--}-->
+            <!--#main_pass path[fill="#B0B1C5"],-->
+            <!--#main_pass line[fill="#B0B1C5"],-->
+            <!--#main_pass rect[fill="#B0B1C5"] {-->
+                <!--fill: yellow;-->
+            <!--}-->
+            <!--#injection path[stroke="#B0B1C5"],-->
+            <!--#injection line[stroke="#B0B1C5"],-->
+            <!--#injection rect[stroke="#B0B1C5"] {-->
+                <!--stroke: yellow;-->
+            <!--}-->
+            <!--#injection path[fill="#B0B1C5"],-->
+            <!--#injection line[fill="#B0B1C5"],-->
+            <!--#injection rect[fill="#B0B1C5"] {-->
+                <!--fill: yellow;-->
+            <!--}-->
+
+
+            <!--#main_pass path[stroke="#00ABEE"],-->
+            <!--#main_pass line[stroke="#00ABEE"],-->
+            <!--#main_pass rect[stroke="#00ABEE"] {-->
+                <!--stroke: purple;-->
+            <!--}-->
+            <!--#main_pass path[fill="#00ABEE"],-->
+            <!--#main_pass line[fill="#00ABEE"],-->
+            <!--#main_pass rect[fill="#00ABEE"] {-->
+                <!--fill: purple;-->
+            <!--}-->
+            <!--#injection path[stroke="#00ABEE"],-->
+            <!--#injection line[stroke="#00ABEE"],            -->
+            <!--#injection rect[stroke="#00ABEE"] {-->
+                <!--stroke: purple;-->
+            <!--}-->
+            <!--#injection path[fill="#00ABEE"],-->
+            <!--#injection line[fill="#00ABEE"],-->
+            <!--#injection rect[fill="#00ABEE"] {-->
+                <!--fill: purple;-->
+            <!--}-->
+
+        ]]>
+     </style>
+<!--<g id="main_pass" fill="none">-->
+
+    <!--<path fill-rule="evenodd" clip-rule="evenodd"-->
+          <!--d="M 29 0.5L 5 0.5C 3.067 0.5 1.5 2.067 1.5 4L 1.5 6C 1.5 7.933 3.067 9.5 5 9.5L 7 9.5C 7.82843 9.5 8.5 10.1716 8.5 11L 8.5 16C 8.5 16.8284 7.82843 17.5 7 17.5L 4 17.5C 2.067 17.5 0.5 19.067 0.5 21L 0.5 72C 0.5 73.933 2.067 75.5 4 75.5L 30 75.5C 31.933 75.5 33.5 73.933 33.5 72L 33.5 21C 33.5 19.067 31.933 17.5 30 17.5L 27 17.5C 26.1716 17.5 25.5 16.8284 25.5 16L 25.5 11C 25.5 10.1716 26.1716 9.5 27 9.5L 29 9.5C 30.933 9.5 32.5 7.933 32.5 6L 32.5 4C 32.5 2.067 30.933 0.5 29 0.5Z"-->
+          <!--stroke-miterlimit="8" transform="translate(13 9)" stroke="#00ABEE"/>-->
+    <!--<line y1="-0.5" x2="9" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 19)" stroke="#24384B"/>-->
+    <!--<rect x="0.5" y="0.5" width="6" height="2" rx="0.5" transform="translate(26 16)" stroke="#24384B"/>-->
+    <!--<rect x="0.5" y="0.5" width="12" height="2" rx="0.5" transform="translate(23 28)" stroke="#24384B"/>-->
+    <!--<path fill-rule="evenodd" clip-rule="evenodd"-->
+          <!--d="M 8.5 0.5L 0.5 0.5L 0.5 25.5C 0.5 27.7091 2.29086 29.5 4.5 29.5C 6.70914 29.5 8.5 27.7091 8.5 25.5L 8.5 0.5Z"-->
+          <!--stroke-miterlimit="8" transform="translate(25 30)" stroke="#24384B"/>-->
+    <!--<rect width="3" height="3" transform="translate(28 59)" fill="#24384B"/>-->
+    <!--<line y1="-0.5" x2="17" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 62)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="22" y2="-0.5" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 29 34)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 54)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 48)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 42)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="translate(27 36)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 39)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 45)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 51)" stroke="#24384B"/>-->
+    <!--<line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 5)" stroke="#00ABEE"/>-->
+    <!--<line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 89)" stroke="#00ABEE"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="matrix(0 1 -1 0 29 5)" stroke="#00ABEE"/>-->
+    <!--<line y1="-0.5" x2="4" y2="-0.5" transform="matrix(0 1 -1 0 29 85)" stroke="#00ABEE"/>-->
+<!--</g>-->
+
 <g id="injection" fill="none">
     <line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 5)" stroke="#00ABEE"/>
     <line y1="-0.5" x2="41" y2="-0.5" transform="translate(29 89)" stroke="#00ABEE"/>
@@ -81,5 +157,8 @@
     <line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 30)" stroke="#24384B"/>
     <line y1="-0.5" x2="2" y2="-0.5" transform="matrix(1 8.74228e-08 -8.74228e-08 1 29 36)" stroke="#24384B"/>
 </g>
-</svg>
+
+
+
+ </svg>
 

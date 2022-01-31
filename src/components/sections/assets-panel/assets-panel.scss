@@ -1,5 +1,4 @@
 .assets-panel {
-    padding: 15px 19px 15px 18px;
     background-color: #f1f3f2;
     border-right: 1px solid #bfc2c4;
     box-shadow: -5px 0px 8px 0px rgba(205, 207, 206, 0.7) inset;
@@ -18,15 +17,63 @@
         align-items: center;
         box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 
+
         &:hover {
             background-color: #d2d4d3;
         }
+
+        &-hide {
+            display: flex;
+        }
+
+        &-show {
+            transform: rotate(180deg);
+            display: none;
+        }
+
+
     }
+
+    &.opened {
+        .assets__wrapper {
+            display: block;
+        }
+
+        .slider-icon-hide {
+            display: flex;
+        }
+
+        .slider-icon-show {
+            display: none;
+        }
+
+
+    }
+
+    &.closed {
+        .assets__wrapper {
+            display: none;
+        }
+
+        .slider-icon-hide {
+            display: none;
+        }
+
+        .slider-icon-show {
+            display: flex;
+        }
+
+
+    }
+
+
+
 
     .asset {
         border: 1px solid #bfc2c4;
         background-color: #fff;
         width: 190px;
+        margin: 15px 19px 15px 18px;
 
         &:not(:last-child) {
             margin-bottom: 16px;
@@ -67,37 +114,166 @@
             position: relative;
         }
 
-        .bottle {
-            &.bottle-B {
-                .icon {
 
+        .icon.sampler {
+            width: 55px;
+            height: 107px;
 
-                    use {
-                        //stroke: black;
-                        color: #f4f4f7;
-                    }
+            .sampler-icon {
+                position: relative;
+                width: 55px;
+                height: 107px;
+            }
+
+            .frame {
+                position: absolute;
+                width: 48px;
+                height: 106px;
+
+                use {
+                    stroke: #009fe2;
+                    fill: transparent;
+                }
+
+                #frame-top {
+                    width: 48px;
+                    height: 5px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+                #frame-middle {
+                    width: 1px;
+                    height: 96px;
+                    background-color: #009fe2;
+                    position: absolute;
+                    top: 5px;
+                    right: 0;
+                }
+
+                #frame-bottom {
+                    width: 48px;
+                    height: 5px;
+                    transform: scale(1, -1);
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+
+            .syringe {
+                position: absolute;
+                top: 7px;
+
+                #syringe {
+                    width: 13px;
+                    height: 61px;
+                }
+
+                #main_pass {
+                    stroke: #2f3b4c;
+                    fill: transparent;
                 }
 
             }
 
+            .beaker {
+                position: absolute;
+                bottom: 37px;
+                left: -1px;
+
+                #beaker {
+                    width: 15px;
+                    height: 29px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                #injection {
+                    stroke: #afb0c3;
+                    fill: transparent;
+                }
+
+                #beaker-line {
+                    width: 8px;
+                    height: 1px;
+                    background-color: #afb0c3;
+                    position: absolute;
+                    top: 7.1px;
+                    left: 3.5px;
+                }
+            }
+        }
+
+        .icon.bottle {
+            width: 30px;
+            height: 53px;
+
+            .bottle-A-icon {
+                position: relative;
+                display: flex;
+                justify-content: center;
+            }
+
+            &.bottle-A {
+                margin-right: 8px;
+            }
+
+            #bottleA {
+                fill: #12a9eb;
+                //stroke: #12a9eb;
+                width: 30px;
+                height: 53px;
+            }
+
+            #bottleB-bottle {
+                fill: #12a9eb;
+                //stroke: #12a9eb;
+            }
+
+            #bottleB-full {
+                fill: #f4f4f7;
+                stroke: #fff;
+            }
+
+            #full {
+                fill: #f4f4f7;
+            }
+
+            #Canvas {
+                fill: #fff;
+            }
+
             .bottle-txt {
                 position: absolute;
-                bottom: 8px;
+                bottom: 12px;
+                left: 0;
                 font-size: 11px;
+                text-align: center;
+                width: 100%;
             }
 
             .bottle-under {
                 position: absolute;
                 bottom: -13px;
+                left: 0;
                 font-size: 9px;
+                width: 100%;
+                text-align: center;
             }
         }
 
-        .icon.icon-sampler-icon {
-            width: 60px;
-            height: 110px;
-        }
+        .icon.valve {
+            width: 50px;
+            height: 31px;
 
+            #valve {
+                stroke: #12a9eb;
+                fill: #fff;
+            }
+        }
     }
 
     .asset-1 {
@@ -110,23 +286,30 @@
         .asset__header:before {
             background-color: #f5ad3c;
         }
-
-        .asset__row:first-child {
-            .asset__col:first-child {
-                .icon {
-                    width: 30px;
-                    position: relative;
-                }
-
-            }
-        }
     }
+}
 
+svg path {
+    fill: inherit;
 }
 
 
 @media (max-width: 1120px) {
+    .assets-panel {
+        min-height: 20px;
+    }
     .assets-panel .slider-icon {
         display: none;
+        right: inherit;
+        left: 40px;
+        top: inherit;
+        bottom: -14px;
+
+        &-hide {
+            transform: rotate(90deg);
+        }
+        &-show {
+            transform: rotate(270deg);
+        }
     }
 }

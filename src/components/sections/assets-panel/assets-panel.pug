@@ -1,35 +1,61 @@
 block assets-panel
     section.assets-panel
-        button.button.slider-icon
+        button.button.slider-icon.slider-icon-hide
             img(src="static/images/png/arrow-left.png" alt="arrow")
-            //+icon("select-arrow")
-        .asset.asset-1
-            .asset__header Sampler
-            .asset__body.flex.flex-around-center
-                .asset__row.flex-around
-                    .asset__col
-                        +icon("sampler-icon")
-                    .asset__col.flex-col-around-center
-                        .thermostat
-                            img(src="static/images/png/thermostat.png" alt="thermostat")
-                        .vial
-                            img(src="static/images/png/vial.png" alt="vial")
-        .asset.asset-2
-            .asset__header Quat. Pump
-            .asset__body.flex-col-around-center
-                .asset__row.flex-around-center
-                    .asset__col.flex
-                        .bottle.bottle-A.flex-center
-                            +icon("bottle-A")
-                            span.bottle-txt A
-                            span.bottle-under 0.0
+        button.button.slider-icon.slider-icon-show
+            img(src="static/images/png/arrow-left.png" alt="arrow")
 
-                        .bottle.bottle-B.flex-center
-                            +icon("bottle-B")
-                            span.bottle-txt B
-                            span.bottle-under 100.0
+        .assets__wrapper
+            .asset.asset-1
+                .asset__header Sampler
+                .asset__body.flex.flex-around-center
+                    .asset__row.flex-around
+                        .asset__col
+                            .icon.sampler
+                                .sampler-icon
+                                    .frame
+                                        svg#frame-top(viewBox="23 0 48 5")
+                                            use#fr-top(xlink:href="static/images/svg/sampler-icon.svg#by_pass")
+                                        svg#frame-middle
+                                        svg#frame-bottom(viewBox="23 0 48 5")
+                                            use#fr-bottom(xlink:href="static/images/svg/sampler-icon.svg#by_pass")
+                                    .syringe
+                                        svg#syringe(viewBox="23 16 13 61")
+                                            use#main_pass(xlink:href="static/images/svg/sampler-icon.svg#main_pass")
 
-                    .asset__col
-                        +icon("valve-icon")
-                .asset__row.center 1.000 mL/min
+                                    .beaker
+                                        svg#beaker(viewBox="22 56 15 29")
+                                            use#injection(xlink:href="static/images/svg/sampler-icon.svg#injection")
+                                        svg#beaker-line
+                        .asset__col.flex-col-around-center
+                            .thermostat
+                                img(src="static/images/png/thermostat.png" alt="thermostat")
+                            .vial
+                                img(src="static/images/png/vial.png" alt="vial")
+            .asset.asset-2
+                .asset__header Quat. Pump
+                .asset__body.flex-col-around-center
+                    .asset__row.flex-around-center
+                        .asset__col.flex
+                            .icon.bottle.bottle-A.flex-center
+                                .bottle-A-icon
+                                    svg(width="30" height="53" viewBox="0 0 63 113")
+                                        use#bottleA(xlink:href="static/images/svg/bottle-A.svg#bottle")
+                                span.bottle-txt A
+                                span.bottle-under 0.0
+
+                            .icon.bottle.bottle-B.flex-center
+                                .bottle-B-icon
+                                    svg(width="30" height="53" viewBox="0 0 63 113")
+                                        use#bottleB-bottle(xlink:href="static/images/svg/bottle-B.svg#bottle")
+                                        use#bottleB-full(xlink:href="static/images/svg/bottle-B.svg#full")
+                                span.bottle-txt B
+                                span.bottle-under 100.0
+
+                        .asset__col
+                            .icon.valve
+                                .valve-icon
+                                    svg(width="50" height="31" viewBox="0 0 51 31")
+                                        use#valve(xlink:href="static/images/svg/valve-icon.svg#Canvas")
+                    .asset__row.center 1.000 mL/min
 

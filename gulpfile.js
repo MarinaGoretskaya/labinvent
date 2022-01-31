@@ -87,7 +87,7 @@ function vendors() {
 
 function imgMin() {
     return gulp.src([
-        'src/images/**/*.{jpg,gif,png,svg}',
+        'src/images/**/*.{jpg,gif,png}',
         '!src/images/sprite/*'])
         .pipe(gulpImageMin([
             gulpImageMin.gifsicle({interlaced: true}),
@@ -103,29 +103,56 @@ function imgMin() {
         .pipe(gulp.dest('dist/static/images/'))
 }
 
-function svgSpriteBuild() {
-    return gulp.src('src/images/sprite/*.svg')
-        .pipe(svgmin({
-            js2svg: {
-                pretty: true
-            }
-        }))
+// function svgSpriteBuild() {
+//     return gulp.src('src/images/sprite/*.svg')
+//         .pipe(svgmin({
+//             js2svg: {
+//                 pretty: true
+//             }
+//         }))
+//         .pipe(cheerio({
+//             run: function ($) {
+//                 $('[fill]').removeAttr('fill');
+//                 $('[stroke]').removeAttr('stroke');
+//                 $('[style]').removeAttr('style');
+//             },
+//             parserOptions: {xmlMode: true}
+//         }))
+//         .pipe(replace('&gt;', '>'))
+//         .pipe(svgSprite({
+//             mode: {
+//                 symbol: {
+//                     sprite: "sprite.svg"
+//                 }
+//             }
+//         }))
+//         .pipe(gulp.dest('dist/static/images/sprite'));
+// }
+
+function svgBuild() {
+    return gulp.src('src/images/svg/*.svg')
+        .pipe(gulpImageMin([
+            gulpImageMin.gifsicle({interlaced: true}),
+            gulpImageMin.mozjpeg({quality: 75, progressive: true}),
+            gulpImageMin.optipng({optimizationLevel: 5}),
+            gulpImageMin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
         .pipe(cheerio({
             run: function ($) {
-                // $('[stroke]').removeAttr('stroke');
-                // $('[style]').removeAttr('style');
+                $('[fill]').removeAttr('fill');
+                $('[stroke]').removeAttr('stroke');
+                $('[style]').removeAttr('style');
             },
             parserOptions: {xmlMode: true}
         }))
         .pipe(replace('&gt;', '>'))
-        .pipe(svgSprite({
-            mode: {
-                symbol: {
-                    sprite: "sprite.svg"
-                }
-            }
-        }))
-        .pipe(gulp.dest('dist/static/images/sprite'));
+
+        .pipe(gulp.dest('dist/static/images/svg'));
 }
 
 
@@ -145,13 +172,14 @@ function watch() {
 
     gulp.watch('src/**/*.pug', pugToHtml);
     gulp.watch('[src/images/**/*.{jpg,gif,png,svg}, !src/images/sprite/*]', imgMin);
-    gulp.watch('src/images/sprite/*', svgSpriteBuild);
+    // gulp.watch('src/images/sprite/*', svgSpriteBuild);
+    gulp.watch('src/images/svg/*', svgBuild);
     gulp.watch('src/base/js/main.js', script);
     gulp.watch('src/**/*.scss', scssToCss);
     gulp.watch('dist/*.html').on('change', browserSync.reload);
 }
 
-const dev = gulp.parallel(fonts, pugToHtml, scssToCss, imgMin, svgSpriteBuild, script, copyJQuery, rigger, vendors);
+const dev = gulp.parallel(fonts, pugToHtml, scssToCss, imgMin, svgBuild, script, copyJQuery, rigger, vendors);
 
 exports.default = gulp.series(clean, dev, watch);
 exports.build = gulp.series(clean, setMode(true), dev);
